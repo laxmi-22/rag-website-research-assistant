@@ -83,8 +83,9 @@ if process_url_clicked:
         st.error(f"Error Building pipeline : {e}")
 
 # user question
+st.subheader("Ask a Question")
 query = st.text_input(
-    "Question:",
+    "",
     key="query",
     disabled=st.session_state.disabled
 )
@@ -139,6 +140,7 @@ if query:
                         st.write("---")              
     else:
         st.warning("Please process URLs first.")
+
 
 
 
