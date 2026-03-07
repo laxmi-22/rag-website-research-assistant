@@ -1,13 +1,15 @@
 streamlit
 langchain==0.2.14
 langchain-community==0.2.12
-langchain-groq
 chromadb==0.4.24
+langchain-groq
+langchain-huggingface
 sentence-transformers
 beautifulsoup4
 requests
 python-dotenv
 pydantic==1.10.13
+
 
 
 
