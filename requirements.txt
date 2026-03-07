@@ -10,5 +10,9 @@ streamlit
 python-dotenv 
 unstructured
 pydantic==1.10.13
+sentence-transformers
+beautifulsoup4
+requests
+
 
 
