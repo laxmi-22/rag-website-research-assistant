@@ -1,10 +1,10 @@
 streamlit
 langchain==0.2.14
 langchain-community==0.2.12
-chromadb==0.4.24
 langchain-groq
-langchain-huggingface
+chromadb==0.4.24
 sentence-transformers
+huggingface-hub
 beautifulsoup4
 requests
 python-dotenv
