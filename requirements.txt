@@ -3,9 +3,7 @@ langchain-community==0.2.12
 chromadb==0.4.24
 langchain_core
 langchain_groq
-langchain_text_splitters
 langchain_huggingface
-langchain_classic
 streamlit
 python-dotenv 
 unstructured
@@ -13,6 +11,7 @@ pydantic==1.10.13
 sentence-transformers
 beautifulsoup4
 requests
+
 
 
 
