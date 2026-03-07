@@ -1,4 +1,3 @@
-python=3.10
 langchain
 langchain_core
 langchain_groq
@@ -7,4 +6,5 @@ langchain_text_splitters
 langchain_huggingface
 langchain_classic
 streamlit
+
 python-dotenv 
