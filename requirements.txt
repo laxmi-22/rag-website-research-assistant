@@ -7,4 +7,5 @@ langchain_huggingface
 langchain_classic
 streamlit
 python-dotenv 
+unstructured
 
