@@ -8,7 +8,7 @@ Streamlit App: https://rag-website-research-assistant-8nw8r8peq52bdvnj5tmqq4.str
 
 ## 📌 Project Overview
 
-The **AI Website Research Assistant** enables users to input multiple website URLs and ask questions about their content. The application extracts webpage data, converts it into embeddings, stores it in a vector database, retrieves relevant chunks, and uses an LLM to generate accurate answers with source references.
+The **AI Website Research Assistant** enables users to input multiple website URLs and ask questions about their content. The application extracts webpage data, converts it into embeddings, stores it in a vector database, retrieves relevant chunks, and uses an LLM to generate accurate answers with source references and similarity scores.
 
 This project demonstrates the implementation of **Retrieval-Augmented Generation (RAG)** using modern AI frameworks.
 
@@ -158,3 +158,4 @@ Contributions are welcome! Feel free to open issues or submit pull requests.
 ## 📄 License
 
 This project is open source and available under the MIT License.
+
