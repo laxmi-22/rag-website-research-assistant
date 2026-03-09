@@ -1,105 +1,160 @@
 # AI Website Research Assistant (RAG)
 
-Part of my learning journey in Retrieval-Augmented Generation (RAG) systems.
-A Retrieval-Augmented Generation (RAG) application that allows users to ask questions about the content of websites.
+An AI-powered application that allows users to ask questions based on the content of one or more websites. The system retrieves relevant information from the provided URLs and generates grounded answers using Retrieval-Augmented Generation (RAG).
 
-The application ingests website URLs, processes the content, stores embeddings in a vector database, and uses an LLM to generate answers grounded in the retrieved context.
+## 🚀 Live Demo
 
-## Features
+Streamlit App: https://rag-website-research-assistant-8nw8r8peq52bdvnj5tmqq4.streamlit.app/
 
-- Load content from multiple website URLs
-- Automatically split content into chunks
-- Generate embeddings for semantic search
-- Store embeddings in a vector database (Chroma)
-- Retrieve relevant content based on user queries
-- Generate answers using a Large Language Model
-- Display source links for transparency
-- Simple interactive UI built with Streamlit
+## 📌 Project Overview
 
-## Architecture
+The **AI Website Research Assistant** enables users to input multiple website URLs and ask questions about their content. The application extracts webpage data, converts it into embeddings, stores it in a vector database, retrieves relevant chunks, and uses an LLM to generate accurate answers with source references.
 
-The application follows a typical RAG pipeline:
+This project demonstrates the implementation of **Retrieval-Augmented Generation (RAG)** using modern AI frameworks.
 
-1. URL Loading  
-   Load website content using LangChain URL loaders
+## ✨ Features
 
-2. Text Chunking  
-   Split documents into smaller chunks for embedding
+* Extracts content from multiple website URLs
+* Splits content into manageable chunks
+* Converts text into vector embeddings
+* Stores embeddings in a vector database
+* Retrieves the most relevant content for a user query
+* Generates answers using an LLM
+* Displays sources and similarity scores for transparency
+* Interactive web interface built with Streamlit
 
-3. Embedding Generation  
-   Convert text chunks into vector embeddings
+## 🧠 Architecture
 
-4. Vector Storage  
-   Store embeddings in a Chroma vector database
+The application follows a modular architecture:
 
-5. Retrieval  
-   Retrieve the most relevant chunks for a user query
+User Input (URLs + Question)
+↓
+Website Content Loader
+↓
+Text Chunking
+↓
+Embedding Generation
+↓
+Vector Storage (ChromaDB)
+↓
+Retriever
+↓
+LLM Answer Generation
+↓
+Response with Sources
 
-6. Answer Generation  
-   Generate an answer using the retrieved context
+## 🛠 Tech Stack
 
-## Project Structure
+**Programming Language**
 
+* Python
 
+**Frameworks & Libraries**
 
-## Installation
+* Streamlit
+* LangChain
 
-### Clone the repository
-git clone https://github.com/laxmi-22/rag-website-research-assistant.git
+**Vector Database**
+
+* ChromaDB
+
+**Embeddings**
+
+* Sentence Transformers (HuggingFace)
+
+**LLM**
+
+* Groq
+
+**Web Scraping**
+
+* BeautifulSoup
+* Requests
+
+## 📂 Project Structure
+
+```
+rag-website-research-assistant
+│
+├── app.py
+├── requirements.txt
+│
+├── services
+│   ├── LoaderService.py
+│   ├── ChunkingService.py
+│   ├── EmbeddingService.py
+│   ├── VectorStoreService.py
+│   ├── RetrieverService.py
+│   └── GeneratorService.py
+│
+├── utils
+│   └── RAGPipeline.py
+│
+└── data
+```
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```
+git clone https://github.com/yourusername/rag-website-research-assistant.git
 cd rag-website-research-assistant
+```
 
-### Create virtual environment
+Create a virtual environment:
+
+```
 python -m venv venv
+source venv/bin/activate
+```
 
-### Activate environment
-Windows
-venv\Scripts\activate
+Install dependencies:
 
-### Install dependencies
+```
 pip install -r requirements.txt
+```
 
-### Add your API key
-Create `.env` file:
+## 🔑 Environment Variables
+
+Create a `.env` file and add your API key:
+
+```
 GROQ_API_KEY=your_api_key_here
-HUGGINGFACEHUB_API_TOKEN= "your_huggingface_token"
+```
 
+## ▶️ Run the Application
 
-## Run the Application
+Start the Streamlit app:
+
+```
 streamlit run app.py
+```
 
-The application will open in your browser.
-
-## Example
-
-Enter website URLs in the sidebar and ask questions related to their content.
-
-Example query:
-What is FastAPI?
-
-
-The system retrieves relevant content from the provided websites and generates an answer along with the source links.
-
-## Screenshot
+## 📸 Application Screenshot
 
 ![App Screenshot](screenshot.png)
 
-## Tech Stack
+## 📚 What I Learned
 
-- Python
-- LangChain -Orchestration & Prompt Management
-- Groq cloud- High-speed inference
-- ChromaDB - Vector store
-- HuggingFace Embedding
-- Streamlit-Simple & interactive user interface
-- llama-3.1-8b-instant – Large Language Model
+* Implementing Retrieval-Augmented Generation (RAG)
+* Working with embeddings and vector databases
+* Designing modular AI applications
+* Handling dependency compatibility issues
+* Deploying AI apps using Streamlit Cloud
 
-## Future Improvements
+## 🔮 Future Improvements
 
-- Retrieval score visualization
-- Chat history
-- Multi-query retrieval
-- Better chunk visualization
-- Logging and monitoring
+* Support for PDF and document uploads
+* Conversation memory
+* Improved chunking strategies
+* Multiple LLM options
+* Authentication for users
 
+## 🤝 Contributing
 
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
+## 📄 License
+
+This project is open source and available under the MIT License.
