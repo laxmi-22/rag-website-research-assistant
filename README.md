@@ -1,5 +1,6 @@
 # AI Website Research Assistant (RAG)
 
+Part of my learning journey in Retrieval-Augmented Generation (RAG) systems.
 A Retrieval-Augmented Generation (RAG) application that allows users to ask questions about the content of websites.
 
 The application ingests website URLs, processes the content, stores embeddings in a vector database, and uses an LLM to generate answers grounded in the retrieved context.
@@ -99,5 +100,6 @@ The system retrieves relevant content from the provided websites and generates a
 - Multi-query retrieval
 - Better chunk visualization
 - Logging and monitoring
+
 
 
