@@ -27,21 +27,7 @@ This project demonstrates the implementation of **Retrieval-Augmented Generation
 
 The application follows a modular architecture:
 
-User Input (URLs + Question)
-↓
-Website Content Loader
-↓
-Text Chunking
-↓
-Embedding Generation
-↓
-Vector Storage (ChromaDB)
-↓
-Retriever
-↓
-LLM Answer Generation
-↓
-Response with Sources
+![Architecture Diagram](ArchitectureDiagram.png)
 
 ## 🛠 Tech Stack
 
@@ -158,4 +144,5 @@ Contributions are welcome! Feel free to open issues or submit pull requests.
 ## 📄 License
 
 This project is open source and available under the MIT License.
+
 
