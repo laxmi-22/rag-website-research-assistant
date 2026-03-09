@@ -4,7 +4,7 @@
 
 import os
 from getpass import getpass
-from langchain_huggingface import HuggingFaceEndpointEmbeddings
+from langchain_huggingface.embeddings import HuggingFaceEndpointEmbeddings
 
 
 class EmbeddingService:
@@ -21,4 +21,5 @@ class EmbeddingService:
     
     def get_embeddings(self):        
         print("[Embedding] Embedding model initialized")
+
         return self.embeddings
